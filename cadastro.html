@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--Troca o icon dps-->
+    <link rel="stylesheet" href="_css/styles.css">
+    <title>Animes YU</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+    }
+    .cad h1{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .cad{
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+    .cad input[type = "text"], .cad input[type = "password"]{
+        border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    }
+    .cad input[type = "text"]:focus, .cad input[type = "password"]:focus{
+        width: 280px;
+        border-color: #2ecc71;
+    }
+    .cad input[type = "submit"]{
+        border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    }
+    .cad input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+</style>
+<body class="bg">
+<form class="cad" action="cadastro.html" method="post">
+    <h2>Cadastre-se</h2>
+    <input type="text" name="email" placeholder="Email">
+    <input type="text" name="username" placeholder="Usuário">
+    <input type="password" name="password" placeholder="Senha">
+    <input type="submit" name="" value="Cadastrar">
+</form>
+</body>
+</html>
